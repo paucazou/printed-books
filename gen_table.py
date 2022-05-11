@@ -10,8 +10,6 @@ languages={
         '':"PROBLEM\n\n\n"
         }
 
-with open("data.txt") as f:
-    data=json.loads(f.read())
 
 def accumulate(l):
     return fc.reduce(lambda x,y: x+y, l)
@@ -83,10 +81,15 @@ def _crawl(item, lvl) -> dict:
             }
 
 def gen_page():
+    with open("data.txt") as f:
+        data=json.loads(f.read())
     with open("table.html") as f:
         page=f.read()
     table = crawl(data)
     page=page.format(table)
     with open("out.html",'w') as f:
         f.write(page)
+
+if __name__ == '__main__':
+    gen_page()
 
