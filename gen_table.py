@@ -27,7 +27,7 @@ def crawl(data) -> str:
             <th scope="col" >Auteur</th>
             <th scope="col" >Format</th>
             <th scope="col" >Langue</th>
-            <th scope="col" >Prix</th>
+            <th scope="col" >Prix (€)</th>
             <th scope="col" >Pages</th>
         </tr>
     </thead>
