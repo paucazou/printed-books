@@ -1,0 +1,554 @@
+[
+    {"book_category": "Music",
+        "book_size":"A5",
+        "language":"fra",
+        "page_count":"75",
+        "project_name":"L'Organiste improvisateur",
+        "retail_price_excl_taxes":"5.70",
+        "author":"Paul Wachs"
+        },
+    {
+        "book_category": "Music",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "58",
+        "project_name": "Manuel d'accompagnement du plain-chant grégorien",
+        "retail_price_excl_taxes": "5.43"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "539",
+        "project_name": "Martyrologium Romanum",
+        "retail_price_excl_taxes": "19.55"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "374",
+        "project_name": "In prophetas minores 2",
+        "retail_price_excl_taxes": "10.40"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "235",
+        "project_name": "In prophetas majores D - in Danielem",
+        "retail_price_excl_taxes": "7.49"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "261",
+        "project_name": "In prophetae majores C - in Ezechielem",
+        "retail_price_excl_taxes": "8.03"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "288",
+        "project_name": "In prophetas majores B - in Jeremiam",
+        "retail_price_excl_taxes": "8.60"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "489",
+        "project_name": "In prophetas majores A - in Isaiam",
+        "retail_price_excl_taxes": "12.82"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "384",
+        "project_name": "In prophetas minores 1",
+        "retail_price_excl_taxes": "10.61"
+    },
+    {
+        "book_category": "Music",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "413",
+        "project_name": "Graduale Romanum 1",
+        "retail_price_excl_taxes": "13.42"
+    },
+    {
+        "book_category": "Music",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "375",
+        "project_name": "Graduale Romanum 2",
+        "retail_price_excl_taxes": "12.63"
+    },
+    {
+        "book_category": "Music",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "431",
+        "project_name": "Graduale Romanum 3",
+        "retail_price_excl_taxes": "13.80"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "456",
+        "project_name": "4 - Saint Jean",
+        "retail_price_excl_taxes": "9.60"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "622",
+        "project_name": "Explication de la messe 3",
+        "retail_price_excl_taxes": "12.25"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "Pocket Book",
+        "language": "fra",
+        "page_count": "584",
+        "project_name": "Explication de la Grand'messe de paroisse",
+        "retail_price_excl_taxes": "11.64"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "720",
+        "project_name": "Le Pentateuque",
+        "retail_price_excl_taxes": "13.82"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "Pocket Book",
+        "language": "fra",
+        "page_count": "409",
+        "project_name": "Le Sens mystique de l'Apocalypse",
+        "retail_price_excl_taxes": "8.84"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "566",
+        "project_name": "Catena Aurea - 6",
+        "retail_price_excl_taxes": "11.36"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "438",
+        "project_name": "Fillion 8_2",
+        "retail_price_excl_taxes": "9.31"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "526",
+        "project_name": "Catena Aurea - 2",
+        "retail_price_excl_taxes": "10.72"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "454",
+        "project_name": "Catena Aurea - 3",
+        "retail_price_excl_taxes": "9.56"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "511",
+        "project_name": "Catena Aurea - 5",
+        "retail_price_excl_taxes": "10.48"
+    },
+    {
+        "book_category": "Music",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "118",
+        "project_name": "Traité de Contrepoint",
+        "retail_price_excl_taxes": "4.19"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "220",
+        "project_name": "Josu\u00e9 - Monl\u00e9on",
+        "retail_price_excl_taxes": "5.82"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "423",
+        "project_name": "Fillion 7_3 lc",
+        "retail_price_excl_taxes": "9.07"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "664",
+        "project_name": "Lebrun 1",
+        "retail_price_excl_taxes": "12.92"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "682",
+        "project_name": "Fillion 2",
+        "retail_price_excl_taxes": "13.21"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "445",
+        "project_name": "Fillion 6_1",
+        "retail_price_excl_taxes": "9.42"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "508",
+        "project_name": "Fillion 5-1",
+        "retail_price_excl_taxes": "10.43"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "234",
+        "project_name": "Fillion 7_2 mc",
+        "retail_price_excl_taxes": "6.04"
+    },
+    {
+        "book_category": "Art & Photography",
+        "book_size": "A4",
+        "language": "fra",
+        "page_count": "197",
+        "project_name": "Harmonie 1 - Koechlin",
+        "retail_price_excl_taxes": "8.89"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "734",
+        "project_name": "Fillion 1",
+        "retail_price_excl_taxes": "14.04"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "142",
+        "project_name": "Exode - Fillion",
+        "retail_price_excl_taxes": "5.53"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "300",
+        "project_name": "David -Monl\u00e9on",
+        "retail_price_excl_taxes": "7.10"
+    },
+    {
+        "book_category": "History",
+        "book_size": "A4",
+        "language": "fra",
+        "page_count": "168",
+        "project_name": "Sacre coeur crosefinte",
+        "retail_price_excl_taxes": "9.61"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "468",
+        "project_name": "Catena 4",
+        "retail_price_excl_taxes": "9.79"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "586",
+        "project_name": "Lebrun 2",
+        "retail_price_excl_taxes": "11.68"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "569",
+        "project_name": "Fillion 7_1 mt",
+        "retail_price_excl_taxes": "11.40"
+    },
+    {
+        "book_category": "Art & Photography",
+        "book_size": "A4",
+        "language": "fra",
+        "page_count": "144",
+        "project_name": "Improvisation - Dupr\u00e9",
+        "retail_price_excl_taxes": "5.57"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "670",
+        "project_name": "Juges \u00e0 Rois IV",
+        "retail_price_excl_taxes": "13.02"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "",
+        "page_count": "458",
+        "project_name": "Fillion 8_1",
+        "retail_price_excl_taxes": "9.63"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "543",
+        "project_name": "Lebrun 4",
+        "retail_price_excl_taxes": "10.99"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "306",
+        "project_name": "Fillion 5_2",
+        "retail_price_excl_taxes": "7.20"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "300",
+        "project_name": "Moise - Maul\u00e9on",
+        "retail_price_excl_taxes": "7.10"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "340",
+        "project_name": "Les Patriarches - Monl\u00e9on",
+        "retail_price_excl_taxes": "7.74"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "639",
+        "project_name": "Fillion 4",
+        "retail_price_excl_taxes": "12.52"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "135",
+        "project_name": "Octavius",
+        "retail_price_excl_taxes": "4.46"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "640",
+        "project_name": "Fillion 3",
+        "retail_price_excl_taxes": "12.54"
+    },
+    {
+        "book_category": "Art & Photography",
+        "book_size": "A4",
+        "language": "fra",
+        "page_count": "273",
+        "project_name": "Harmonie - Koechlin 2",
+        "retail_price_excl_taxes": "10.48"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "240",
+        "project_name": "Daniel - Jonas - Monl\u00e9on",
+        "retail_price_excl_taxes": "6.14"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "469",
+        "project_name": "Catena 8",
+        "retail_price_excl_taxes": "9.80"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "514",
+        "project_name": "Catena 1",
+        "retail_price_excl_taxes": "10.52"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "212",
+        "project_name": "Fillion 7_5 act",
+        "retail_price_excl_taxes": "5.69"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "454",
+        "project_name": "Fillion 6_2",
+        "retail_price_excl_taxes": "9.56"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "497",
+        "project_name": "Catena 7",
+        "retail_price_excl_taxes": "10.25"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "401",
+        "project_name": "Denzinger latin",
+        "retail_price_excl_taxes": "10.97"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "636",
+        "project_name": "cornelius a lapide num lev deut 3",
+        "retail_price_excl_taxes": "15.91"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "527",
+        "project_name": "denys areopagite",
+        "retail_price_excl_taxes": "10.73"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "342",
+        "project_name": "cornelius a lapide 2 exode",
+        "retail_price_excl_taxes": "9.73"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "530",
+        "project_name": "Sainte Catherine de G\u00eanes",
+        "retail_price_excl_taxes": "10.78"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "539",
+        "project_name": "Ste Mechthilde",
+        "retail_price_excl_taxes": "10.92"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "300",
+        "project_name": "Apocryphes Sacy",
+        "retail_price_excl_taxes": "7.10"
+    },
+    {
+        "book_category": "Music",
+        "book_size": "A5",
+        "language": "eng",
+        "page_count": "70",
+        "project_name": "Improvisation Schouten",
+        "retail_price_excl_taxes": "5.62"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A4",
+        "language": "lat",
+        "page_count": "577",
+        "project_name": "Cornelius a lapide 1 genese",
+        "retail_price_excl_taxes": "20.12"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "283",
+        "project_name": "Liber Sacramentorum 1",
+        "retail_price_excl_taxes": "6.83"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "312",
+        "project_name": "Liber Sacramentorum 3",
+        "retail_price_excl_taxes": "7.29"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "fra",
+        "page_count": "264",
+        "project_name": "Liber sacramentorum 2",
+        "retail_price_excl_taxes": "6.52"
+    },
+    {
+        "book_category": "Religion & Spirituality",
+        "book_size": "A5",
+        "language": "lat",
+        "page_count": "500",
+        "project_name": "Apocryphes Sacy (suite)",
+        "retail_price_excl_taxes": "10.30"
+    },
+    {
+        "book_category": "Music",
+        "book_size": "A4",
+        "language": "fra",
+        "page_count": "391",
+        "project_name": "Fugue - Gedalge",
+        "retail_price_excl_taxes": "10.76"
+    }
+]
