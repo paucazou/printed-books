@@ -2,6 +2,8 @@
 
 import functools as fc
 import json
+import os
+import time
 
 languages={
         'eng':"Anglais",
@@ -20,7 +22,7 @@ def crawl(data) -> str:
     table='''
 <table class="table table-hover">
     <thead>
-        <tr>
+        <tr class="table-dark">
             <th scope="col" >Titre</th>
             <th scope="col" >Auteur</th>
             <th scope="col" >Format</th>
@@ -35,6 +37,20 @@ def crawl(data) -> str:
 
     table += "</tbody></table>"
     return table
+
+def _sort_data(data):
+    def sort_key(x):
+        return x['title']
+
+    def sort(items):
+        if 'data' in items:
+            items['data'] = sorted(
+                    (sort(elt) for elt in items['data']),
+                    key = sort_key)
+        return items
+    return sorted(
+            (sort(elt) for elt in data),
+            key = sort_key)
         
 def _title(title,lvl) -> str:
     """Return the title with non secable space padding matching with lvl"""
@@ -82,11 +98,15 @@ def _crawl(item, lvl) -> dict:
 
 def gen_page():
     with open("data.txt") as f:
-        data=json.loads(f.read())
+        data=_sort_data(json.loads(f.read()))
     with open("table.html") as f:
         page=f.read()
     table = crawl(data)
-    page=page.format(table)
+    # Last modif
+    t=os.path.getmtime("data.txt")
+    time_to_print=time.strftime("%d/%m/%Y", time.localtime(t))
+
+    page=page.format(table=table, modif_time=time_to_print)
     with open("out.html",'w') as f:
         f.write(page)
 

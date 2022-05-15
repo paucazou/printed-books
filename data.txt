@@ -253,7 +253,32 @@
                     }
                 ],
                 "title": "In prophetas majores"
+            },
+            {"title":"Livres historiques",
+            "author":"Cornelius a Lapide",
+            "data":[
+                    {
+                        "author": "Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 443,
+                        "price": 11.85,
+                        "title": "II"
+                    },
+                    {
+                        "author": "Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 458,
+                        "price": 12.17,
+                        "title": "I"
+                    }
+                
+            ]
             }
+
         ],
         "title": "Commentaria in Sacram Scripturam"
     },
