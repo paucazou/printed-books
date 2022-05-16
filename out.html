@@ -17,6 +17,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style>
+/* https://css-tricks.com/position-sticky-and-table-headers/ */
 th {
     position: sticky;
     top: 0;
@@ -36,7 +37,7 @@ th {
         </div>
     </div>
     <div class="alert alert-warning" role="alert">
-        Dernière modification : 15/05/2022
+        Dernière modification : 16/05/2022
     </div>
     
 <table class="table table-hover">
@@ -77,6 +78,13 @@ th {
 <td>/</td>
 <td>82.48</td>
 <td>4005</td>
+</tr>
+<tr class='table-light'><td>    Catena Aurea - 1</td>
+<td>Saint Thomas d'Aquin</td>
+<td>A5</td>
+<td>Latin</td>
+<td>10.52</td>
+<td>514</td>
 </tr>
 <tr class='table-light'><td>    Catena Aurea - 2</td>
 <td>Saint Thomas d'Aquin</td>
@@ -127,13 +135,6 @@ th {
 <td>9.8</td>
 <td>469</td>
 </tr>
-<tr class='table-light'><td>    Catena Aurea 1</td>
-<td>Saint Thomas d'Aquin</td>
-<td>A5</td>
-<td>Latin</td>
-<td>10.52</td>
-<td>514</td>
-</tr>
 <tr class="table-info"><td>Commentaire de la Sainte Écriture</td>
 <td>Monléon</td>
 <td>/</td>
@@ -155,7 +156,7 @@ th {
 <td>7.74</td>
 <td>340</td>
 </tr>
-<tr class='table-light'><td>        2 - Moise</td>
+<tr class='table-light'><td>        2 - Moïse</td>
 <td>Monléon</td>
 <td>A5</td>
 <td>Français</td>
@@ -194,10 +195,10 @@ th {
 <td>Cornelius a Lapide</td>
 <td>/</td>
 <td>/</td>
-<td>127.73</td>
-<td>4487</td>
+<td>201.58</td>
+<td>7397</td>
 </tr>
-<tr class="table-info"><td>    In Pentateuchum</td>
+<tr class="table-info"><td>    01/2/3 - In Pentateuchum</td>
 <td>Cornelius a Lapide</td>
 <td>/</td>
 <td>/</td>
@@ -225,42 +226,7 @@ th {
 <td>15.91</td>
 <td>636</td>
 </tr>
-<tr class="table-info"><td>    In prophetas majores</td>
-<td>Cornelius a Lapide</td>
-<td>/</td>
-<td>/</td>
-<td>36.94</td>
-<td>1273</td>
-</tr>
-<tr class='table-light'><td>        In prophetae majores C - in Ezechielem</td>
-<td>Cornelius a Lapide</td>
-<td>A4</td>
-<td>Latin</td>
-<td>8.03</td>
-<td>261</td>
-</tr>
-<tr class='table-light'><td>        In prophetas majores A - in Isaiam</td>
-<td>Cornelius a Lapide</td>
-<td>A4</td>
-<td>Latin</td>
-<td>12.82</td>
-<td>489</td>
-</tr>
-<tr class='table-light'><td>        In prophetas majores B - in Jeremiam</td>
-<td>Cornelius a Lapide</td>
-<td>A4</td>
-<td>Latin</td>
-<td>8.6</td>
-<td>288</td>
-</tr>
-<tr class='table-light'><td>        In prophetas majores D - in Danielem</td>
-<td>Cornelius a Lapide</td>
-<td>A4</td>
-<td>Latin</td>
-<td>7.49</td>
-<td>235</td>
-</tr>
-<tr class="table-info"><td>    In prophetas minores</td>
+<tr class="table-info"><td>    04/5 - In prophetas minores</td>
 <td>Cornelius a Lapide</td>
 <td>/</td>
 <td>/</td>
@@ -281,7 +247,42 @@ th {
 <td>10.4</td>
 <td>374</td>
 </tr>
-<tr class="table-info"><td>    Livres historiques</td>
+<tr class="table-info"><td>    06/7/8/9 - In prophetas majores</td>
+<td>Cornelius a Lapide</td>
+<td>/</td>
+<td>/</td>
+<td>36.94</td>
+<td>1273</td>
+</tr>
+<tr class='table-light'><td>        In prophetas majores A - in Isaiam</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>12.82</td>
+<td>489</td>
+</tr>
+<tr class='table-light'><td>        In prophetas majores B - in Jeremiam</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>8.6</td>
+<td>288</td>
+</tr>
+<tr class='table-light'><td>        In prophetas majores C - in Ezechielem</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>8.03</td>
+<td>261</td>
+</tr>
+<tr class='table-light'><td>        In prophetas majores D - in Danielem</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>7.49</td>
+<td>235</td>
+</tr>
+<tr class="table-info"><td>    10/11 - Livres historiques</td>
 <td>Cornelius a Lapide</td>
 <td>/</td>
 <td>/</td>
@@ -301,6 +302,48 @@ th {
 <td>Latin</td>
 <td>11.85</td>
 <td>443</td>
+</tr>
+<tr class='table-light'><td>    12 - In Proverbia Salomonis</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>15.21</td>
+<td>603</td>
+</tr>
+<tr class='table-light'><td>    13 - In Ecclesiasten & Canticum Canticorum I</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>15.84</td>
+<td>633</td>
+</tr>
+<tr class='table-light'><td>    14 - In Canticum Canticorum II & Sapientiam</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>17.75</td>
+<td>724</td>
+</tr>
+<tr class="table-info"><td>    15/16 - In Ecclesiasticum</td>
+<td>Cornelius a Lapide</td>
+<td>/</td>
+<td>/</td>
+<td>25.05</td>
+<td>950</td>
+</tr>
+<tr class='table-light'><td>        15 - In Ecclesiasticum I</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>12.02</td>
+<td>451</td>
+</tr>
+<tr class='table-light'><td>        16 - In Ecclesiasticum II</td>
+<td>Cornelius a Lapide</td>
+<td>A4</td>
+<td>Latin</td>
+<td>13.03</td>
+<td>499</td>
 </tr>
 <tr class='table-light'><td>Denzinger</td>
 <td>Denzinger</td>
@@ -323,6 +366,13 @@ th {
 <td>47.84</td>
 <td>2415</td>
 </tr>
+<tr class='table-light'><td>    Explication de la messe - 1</td>
+<td>Lebrun</td>
+<td>A5</td>
+<td>Latin</td>
+<td>12.92</td>
+<td>664</td>
+</tr>
 <tr class='table-light'><td>    Explication de la messe - 2</td>
 <td>Lebrun</td>
 <td>A5</td>
@@ -330,26 +380,19 @@ th {
 <td>11.68</td>
 <td>586</td>
 </tr>
+<tr class='table-light'><td>    Explication de la messe - 3</td>
+<td>Lebrun</td>
+<td>A5</td>
+<td>Français</td>
+<td>12.25</td>
+<td>622</td>
+</tr>
 <tr class='table-light'><td>    Explication de la messe - 4</td>
 <td>Lebrun</td>
 <td>A5</td>
 <td>Français</td>
 <td>10.99</td>
 <td>543</td>
-</tr>
-<tr class='table-light'><td>    Explication de la messe 1</td>
-<td>Lebrun</td>
-<td>A5</td>
-<td>Latin</td>
-<td>12.92</td>
-<td>664</td>
-</tr>
-<tr class='table-light'><td>    Explication de la messe 3</td>
-<td>Lebrun</td>
-<td>A5</td>
-<td>Français</td>
-<td>12.25</td>
-<td>622</td>
 </tr>
 <tr class="table-info"><td>Graduale Romanum</td>
 <td>Anonyme</td>
@@ -519,33 +562,33 @@ th {
 <td>36.11</td>
 <td>1682</td>
 </tr>
-<tr class='table-light'><td>            4 - Saint Jean</td>
+<tr class='table-light'><td>            1 - Saint Matthieu</td>
 <td>Fillion</td>
 <td>A5</td>
 <td>Latin</td>
-<td>9.6</td>
-<td>456</td>
+<td>11.4</td>
+<td>569</td>
 </tr>
-<tr class='table-light'><td>            Saint Luc</td>
-<td>Fillion</td>
-<td>A5</td>
-<td>Latin</td>
-<td>9.07</td>
-<td>423</td>
-</tr>
-<tr class='table-light'><td>            Saint Marc</td>
+<tr class='table-light'><td>            2 - Saint Marc</td>
 <td>Fillion</td>
 <td>A5</td>
 <td>Latin</td>
 <td>6.04</td>
 <td>234</td>
 </tr>
-<tr class='table-light'><td>            Saint Matthieu</td>
+<tr class='table-light'><td>            3 - Saint Luc</td>
 <td>Fillion</td>
 <td>A5</td>
 <td>Latin</td>
-<td>11.4</td>
-<td>569</td>
+<td>9.07</td>
+<td>423</td>
+</tr>
+<tr class='table-light'><td>            4 - Saint Jean</td>
+<td>Fillion</td>
+<td>A5</td>
+<td>Latin</td>
+<td>9.6</td>
+<td>456</td>
 </tr>
 <tr class='table-light'><td>Le Sacré-Cœur insigne du combattant vendéen</td>
 <td>Crosefinte</td>

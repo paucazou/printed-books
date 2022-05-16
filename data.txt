@@ -87,7 +87,7 @@
                 "language": "lat",
                 "page_count": 514,
                 "price": 10.52,
-                "title": "Catena Aurea 1"
+                "title": "Catena Aurea - 1"
             },
             {
                 "author": "Saint Thomas d'Aquin",
@@ -186,7 +186,7 @@
                         "title": "1 - In Genesim"
                     }
                 ],
-                "title": "In Pentateuchum"
+                "title": "01/2/3 - In Pentateuchum"
             },
             {
                 "author": "Cornelius a Lapide",
@@ -210,7 +210,7 @@
                         "title": "In prophetas minores 1"
                     }
                 ],
-                "title": "In prophetas minores"
+                "title": "04/5 - In prophetas minores"
             },
             {
                 "author": "Cornelius a Lapide",
@@ -231,7 +231,7 @@
                         "language": "lat",
                         "page_count": 261,
                         "price": 8.03,
-                        "title": "In prophetae majores C - in Ezechielem"
+                        "title": "In prophetas majores C - in Ezechielem"
                     },
                     {
                         "author": "Cornelius a Lapide",
@@ -252,9 +252,9 @@
                         "title": "In prophetas majores A - in Isaiam"
                     }
                 ],
-                "title": "In prophetas majores"
+                "title": "06/7/8/9 - In prophetas majores"
             },
-            {"title":"Livres historiques",
+            {"title":"10/11 - Livres historiques",
             "author":"Cornelius a Lapide",
             "data":[
                     {
@@ -277,7 +277,59 @@
                     }
                 
             ]
-            }
+            },
+            
+                    {
+                        "author": "Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 603,
+                        "price": 15.21,
+                        "title": "12 - In Proverbia Salomonis"
+                    },
+                    {
+                        "author": "Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 724,
+                        "price": 17.75,
+                        "title": "14 - In Canticum Canticorum II & Sapientiam"
+                    },
+                    {
+                        "author": "Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 633,
+                        "price": 15.84,
+                        "title": "13 - In Ecclesiasten & Canticum Canticorum I"
+                    }, 
+                    {"title":"15/16 - In Ecclesiasticum",
+                    "author":"Cornelius a Lapide",
+                    "data": [
+                    {
+                        "author": "Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 451,
+                        "price": 12.02,
+                        "title": "15 - In Ecclesiasticum I"
+                    }, 
+                    {
+                        "author": "Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 499,
+                        "price": 13.03,
+                        "title": "16 - In Ecclesiasticum II"
+                    } 
+                    ]
+                    }
+
 
         ],
         "title": "Commentaria in Sacram Scripturam"
@@ -382,7 +434,7 @@
                         "language": "fra",
                         "page_count": 300,
                         "price": 7.1,
-                        "title": "2 - Moise"
+                        "title": "2 - Moïse"
                     },
                     {
                         "author": "Monléon",
@@ -436,7 +488,7 @@
                 "language": "lat",
                 "page_count": 664,
                 "price": 12.92,
-                "title": "Explication de la messe 1"
+                "title": "Explication de la messe - 1"
             },
             {
                 "author": "Lebrun",
@@ -463,7 +515,7 @@
                 "language": "fra",
                 "page_count": 622,
                 "price": 12.25,
-                "title": "Explication de la messe 3"
+                "title": "Explication de la messe - 3"
             }
         ],
         "title": "Explication de la messe"
@@ -661,7 +713,7 @@
                                 "language": "lat",
                                 "page_count": 569,
                                 "price": 11.4,
-                                "title": "Saint Matthieu"
+                                "title": "1 - Saint Matthieu"
                             },
                             {
                                 "author": "Fillion",
@@ -670,7 +722,7 @@
                                 "language": "lat",
                                 "page_count": 234,
                                 "price": 6.04,
-                                "title": "Saint Marc"
+                                "title": "2 - Saint Marc"
                             },
                             {
                                 "author": "Fillion",
@@ -679,7 +731,7 @@
                                 "language": "lat",
                                 "page_count": 423,
                                 "price": 9.07,
-                                "title": "Saint Luc"
+                                "title": "3 - Saint Luc"
                             },
                             {
                                 "author": "Fillion",
