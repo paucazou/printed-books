@@ -783,5 +783,32 @@
             }
         ],
         "title": "La Sainte Bible selon la Vulgate"
+    },
+    {
+
+    "author":"Anonyme",
+    "title":"Missale Romanum 1920",
+    "data": [
+                            {
+                                "author": "Anonyme",
+                                "book_category": "Religion & Spirituality",
+                                "book_size": "A4",
+                                "language": "lat",
+                                "page_count": 581,
+                                "price": 26.95,
+                                "title": "Volume 1"
+                            },
+                            {
+                                "author": "Anonyme",
+                                "book_category": "Religion & Spirituality",
+                                "book_size": "A4",
+                                "language": "lat",
+                                "page_count": 639,
+                                "price": 34.84,
+                                "title": "Volume 2"
+                            }
+
+    ]
     }
+
 ]
