@@ -328,7 +328,78 @@
                         "title": "16 - In Ecclesiasticum II"
                     } 
                     ]
+                    },
+                    {"title":"17/18 - In Evangelia",
+                    "author": "Cornelius a Lapide",
+                    "data": [
+                        {
+                        "author":"Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 480,
+                        "price": 12.63,
+                        "title": "In SS Matthæum et Marcum"
+                    },
+                        {
+                        "author":"Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 528,
+                        "price": 13.64,
+                        "title": "In SS Lucam et Johannem"
                     }
+                        
+                    ]
+                    },
+                    {"title":"19/20 - In Epistolas Sancti Pauli",
+                    "author": "Cornelius a Lapide",
+                    "data": [
+                        {
+                        "author":"Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 458,
+                        "price": 12.17,
+                        "title": "In Epistolas Sancti Pauli I"
+                    },
+                        {
+                        "author":"Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 446,
+                        "price": 11.92,
+                        "title": "In Epistolas Sancti Pauli II"
+                    }
+                    ]
+                    },
+                    {"title":"21/22 - In Epistolas SS Petri, Judæ, Jacobi et Johannis et in Apocalypsin",
+                    "author": "Cornelius a Lapide",
+                    "data": [
+                        {
+                        "author":"Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 635,
+                        "price": 15.89,
+                        "title": "In Epistolas SS Petri et Jacobi"
+                    },
+                        {
+                        "author":"Cornelius a Lapide",
+                        "book_category": "Religion & Spirituality",
+                        "book_size": "A4",
+                        "language": "lat",
+                        "page_count": 512,
+                        "price": 13.30,
+                        "title": "In Epistolas SS Judæ et Johannis et in Apocalypsin"
+                    }
+                    ]
+                    }
+
 
 
         ],
