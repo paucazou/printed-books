@@ -406,6 +406,57 @@
         "title": "Commentaria in Sacram Scripturam"
     },
     {
+        "author":"Saint Augustin",
+        "title": "Discours sur les Psaumes",
+        "data": [
+            {
+                "author": "Saint Augustin",
+                "book_category": "Religion & Spirituality",
+                "book_size": "Executive",
+                "language": "lat",
+                "page_count": 323,
+                "price": 9.33,
+                "title": "Discours sur les Psaumes 1 à 30"
+            },
+            {
+                "author": "Saint Augustin",
+                "book_category": "Religion & Spirituality",
+                "book_size": "Executive",
+                "language": "lat",
+                "page_count": 688,
+                "price": 17.00,
+                "title": "Discours sur les Psaumes 31 à 58"
+            },
+            {
+                "author": "Saint Augustin",
+                "book_category": "Religion & Spirituality",
+                "book_size": "Executive",
+                "language": "lat",
+                "page_count": 698,
+                "price": 17.21,
+                "title": "Discours sur les Psaumes 59 à 90"
+            },
+            {
+                "author": "Saint Augustin",
+                "book_category": "Religion & Spirituality",
+                "book_size": "Executive",
+                "language": "lat",
+                "page_count": 690,
+                "price": 17.04,
+                "title": "Discours sur les Psaumes 91 à 119"
+            },
+            {
+                "author": "Saint Augustin",
+                "book_category": "Religion & Spirituality",
+                "book_size": "Executive",
+                "language": "lat",
+                "page_count": 706,
+                "price": 17.38,
+                "title": "Discours sur les Psaumes 120 à 150"
+            }
+            ]
+            },
+    {
         "author": "Schuster",
         "data": [
             {
