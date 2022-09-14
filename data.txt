@@ -111,6 +111,15 @@
         "title": "Traité de Contrepoint"
     },
     {
+        "author":"Théodore Dubois",
+        "book_category":"Music",
+        "book_size":"A4",
+        "language":"fra",
+        "page_count":256,
+        "price":10.13,
+        "title":"Traité d'Harmonie"
+        },
+    {
         "author": "Marcel Dupré",
         "book_category": "Music",
         "book_size": "A4",
