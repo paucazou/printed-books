@@ -111,6 +111,15 @@
         "title": "Traité de Contrepoint"
     },
     {
+        "author":"Anonyme",
+        "book_category":"Music",
+        "book_size":"Digest",
+        "language":"fra",
+        "page_count":290,
+        "price":9.14,
+        "title":"Graduels, versets de l'Alleluia et Traits"
+    },
+    {
         "author":"Théodore Dubois",
         "book_category":"Music",
         "book_size":"A4",
