@@ -120,6 +120,15 @@
         "title":"Graduels, versets de l'Alleluia et Traits"
     },
     {
+        "author":"Dom de Monléon",
+        "book_category":"Religion & Spirituality",
+        "book_size":"Pocket",
+        "language":"fra",
+        "page_count":155,
+        "price":4.78,
+        "title":"Traité de l'Oraison"
+        },
+    {
         "author":"Théodore Dubois",
         "book_category":"Music",
         "book_size":"A4",
