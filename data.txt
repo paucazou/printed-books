@@ -768,7 +768,7 @@
     {
         "author":"Monléon",
         "book_category":"Religion & Spirituality",
-        "book_size":"",
+        "book_size":"US Trade",
         "language":"fra",
         "page_count":472,
         "price":10.78,
