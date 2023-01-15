@@ -757,6 +757,24 @@
         "title": "Œuvres"
     },
     {
+        "author": "Abbé Vittrant",
+        "book_category":"Religion & Spirituality",
+        "book_size": "Digest",
+        "language":"fra",
+        "page_count":624,
+        "price":13.44,
+        "title":"Théologie Morale"
+        },
+    {
+        "author":"Monléon",
+        "book_category":"Religion & Spirituality",
+        "book_size":"",
+        "language":"fra",
+        "page_count":472,
+        "price":10.78,
+        "title":"Les Instruments de la perfection"
+        },
+    {
         "author": "Fillion",
         "data": [
             {
