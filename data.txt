@@ -765,6 +765,15 @@
         "price":13.44,
         "title":"Théologie Morale"
         },
+        {
+        "author":"F.X. Godts",
+        "book_category":"Religion & Spirituality",
+        "book_size":"Executive",
+        "language":"lat",
+        "page_count":568,
+        "price":15.85,
+        "title":"De Paucitate Salvandorum quid docuerunt Sancti?"
+        },
     {
         "author":"Monléon",
         "book_category":"Religion & Spirituality",
