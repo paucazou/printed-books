@@ -24,6 +24,30 @@
         "title": "Traité d'harmonie"
     },
     {
+        "author": "Lottin",
+        "data": [
+            {
+                "author": "Lottin",
+                "book_category": "Religion & Spirituality",
+                "book_size": "Digest",
+                "language": "fra",
+                "page_count": 272,
+                "price": 7.28,
+                "title": "Principes de morale - 2"
+            },
+            {
+                "author": "Lottin",
+                "book_category": "Religion & Spirituality",
+                "book_size": "Digest",
+                "language": "fra",
+                "page_count": 334,
+                "price": 8.37,
+                "title": "Principes de morale - 1"
+            }
+        ],
+        "title": "Principes de morale"
+    },
+    {
         "author": "Saint Thomas d'Aquin",
         "data": [
             {
@@ -782,6 +806,15 @@
         "page_count":472,
         "price":10.78,
         "title":"Les Instruments de la perfection"
+        },
+    {
+        "author":"Lottin",
+        "book_category":"Religion & Spirituality",
+        "book_size":"Digest",
+        "language":"fra",
+        "page_count":553,
+        "price":12.20,
+        "title":"Morale fondamentale"
         },
     {
         "author": "Fillion",
