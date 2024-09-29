@@ -994,6 +994,34 @@
         "title": "La Sainte Bible selon la Vulgate"
     },
     {
+        "author": "Mgr de Ségur",
+        "book_category": "Religion & Spirituality",
+        "book_size" : "Executive",
+        "language":"fra",
+        "page_count": 629,
+        "price": 17.26,
+        "title": "Œuvres complètes volume 4"
+    },
+    {
+        "author": "Mgr de Ségur",
+        "book_category": "Religion & Spirituality",
+        "book_size" : "Pocket",
+        "language":"fra",
+        "page_count": 71,
+        "price": 3.73,
+        "title":"La Confession"
+    },
+    {
+        "author": "Mgr de Ségur",
+        "book_category": "Religion & Spirituality",
+        "book_size" : "Pocket",
+        "language":"fra",
+        "page_count": 171,
+        "price": 5.51,
+        "title": "Les trois roses des élus"
+    },
+
+    {
 
     "author":"Anonyme",
     "title":"Missale Romanum 1920",
