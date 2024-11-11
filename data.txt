@@ -1020,6 +1020,30 @@
         "price": 5.51,
         "title": "Les trois roses des élus"
     },
+    {
+        "author": "Bernard Bartmann",
+        "title": "Précis de théologie dogmatique",
+        "data" : [
+                    {
+                        "author":"Bernard Bartmann",
+                        "book_category":"Religion & Spirituality",
+                        "book_size":"A4",
+                        "language":"fra",
+                        "page_count":601,
+                        "price": 16.61,
+                        "title":"Volume 2"
+                        },
+                    {
+                        "author":"Bernard Bartmann",
+                        "book_category":"Religion & Spirituality",
+                        "book_size":"A4",
+                        "language":"fra",
+                        "page_count":550,
+                        "price": 15.44,
+                        "title":"Volume 1"
+                        }
+                        ]
+                        },
 
     {
 
