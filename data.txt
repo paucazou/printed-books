@@ -1021,6 +1021,15 @@
         "title": "Les trois roses des élus"
     },
     {
+        "author":"Ludolphe le chartreux",
+        "book_category":"Religion & Spirituality",
+        "book_size":"US Trade",
+        "language":"fra",
+        "page_count":556,
+        "price":12.25,
+        "title":"La Grande Vie de Jésus-Christ - Tome 1"
+        },
+    {
         "author": "Bernard Bartmann",
         "title": "Précis de théologie dogmatique",
         "data" : [
