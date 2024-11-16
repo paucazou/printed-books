@@ -1022,12 +1022,27 @@
     },
     {
         "author":"Ludolphe le chartreux",
-        "book_category":"Religion & Spirituality",
-        "book_size":"US Trade",
-        "language":"fra",
-        "page_count":556,
-        "price":12.25,
-        "title":"La Grande Vie de Jésus-Christ - Tome 1"
+        "title":"La Grande Vie de Jésus-Christ",
+        "data": [
+            {
+            "author":"Ludolphe le chartreux",
+            "book_category":"Religion & Spirituality",
+            "book_size":"US Trade",
+            "language":"fra",
+            "page_count":556,
+            "price":12.25,
+            "title":"Tome 1"
+            },
+            {
+            "author":"Ludolphe le chartreux",
+            "book_category":"Religion & Spirituality",
+            "book_size":"US Trade",
+            "language":"fra",
+            "page_count":539,
+            "price":11.95,
+            "title":"Tome 2"
+            }
+            ]
         },
     {
         "author": "Bernard Bartmann",
