@@ -1038,6 +1038,24 @@
             "book_category":"Religion & Spirituality",
             "book_size":"US Trade",
             "language":"fra",
+            "page_count":540,
+            "price":11.97,
+            "title":"Tome 3"
+            },
+            {
+            "author":"Ludolphe le chartreux",
+            "book_category":"Religion & Spirituality",
+            "book_size":"US Trade",
+            "language":"fra",
+            "page_count":572,
+            "price":12.53,
+            "title":"Tome 4"
+            },
+            {
+            "author":"Ludolphe le chartreux",
+            "book_category":"Religion & Spirituality",
+            "book_size":"US Trade",
+            "language":"fra",
             "page_count":539,
             "price":11.95,
             "title":"Tome 2"
