@@ -161,6 +161,15 @@
         "price":10.13,
         "title":"Traité d'Harmonie"
         },
+        {
+        "author" :"Mgr Maurice Dionne",
+        "book_category":"Philosophy",
+        "book_size":"A4",
+        "language":"fra",
+        "page_count":317,
+        "price":12.50,
+        "title":"Initiation à la logique"
+        },
     {
         "author": "Marcel Dupré",
         "book_category": "Music",
