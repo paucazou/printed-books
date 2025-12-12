@@ -135,41 +135,41 @@
         "title": "Traité de Contrepoint"
     },
     {
-        "author":"Anonyme",
-        "book_category":"Music",
-        "book_size":"Digest",
-        "language":"fra",
-        "page_count":290,
-        "price":9.14,
-        "title":"Graduels, versets de l'Alleluia et Traits"
+        "author": "Anonyme",
+        "book_category": "Music",
+        "book_size": "Digest",
+        "language": "fra",
+        "page_count": 290,
+        "price": 9.14,
+        "title": "Graduels, versets de l'Alleluia et Traits"
     },
     {
-        "author":"Dom de Monléon",
-        "book_category":"Religion & Spirituality",
-        "book_size":"Pocket",
-        "language":"fra",
-        "page_count":155,
-        "price":4.78,
-        "title":"Traité de l'Oraison"
-        },
+        "author": "Dom de Monléon",
+        "book_category": "Religion & Spirituality",
+        "book_size": "Pocket",
+        "language": "fra",
+        "page_count": 155,
+        "price": 4.78,
+        "title": "Traité de l'Oraison"
+    },
     {
-        "author":"Théodore Dubois",
-        "book_category":"Music",
-        "book_size":"A4",
-        "language":"fra",
-        "page_count":256,
-        "price":10.13,
-        "title":"Traité d'Harmonie"
-        },
-        {
-        "author" :"Mgr Maurice Dionne",
-        "book_category":"Philosophy",
-        "book_size":"A4",
-        "language":"fra",
-        "page_count":317,
-        "price":12.50,
-        "title":"Initiation à la logique"
-        },
+        "author": "Théodore Dubois",
+        "book_category": "Music",
+        "book_size": "A4",
+        "language": "fra",
+        "page_count": 256,
+        "price": 10.13,
+        "title": "Traité d'Harmonie"
+    },
+    {
+        "author": "Mgr Maurice Dionne",
+        "book_category": "Philosophy",
+        "book_size": "A4",
+        "language": "fra",
+        "page_count": 317,
+        "price": 12.5,
+        "title": "Initiation à la logique"
+    },
     {
         "author": "Marcel Dupré",
         "book_category": "Music",
@@ -314,9 +314,10 @@
                 ],
                 "title": "06/7/8/9 - In prophetas majores"
             },
-            {"title":"10/11 - Livres historiques",
-            "author":"Cornelius a Lapide",
-            "data":[
+            {
+                "title": "10/11 - Livres historiques",
+                "author": "Cornelius a Lapide",
+                "data": [
                     {
                         "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
@@ -335,40 +336,39 @@
                         "price": 12.17,
                         "title": "I"
                     }
-                
-            ]
+                ]
             },
-            
-                    {
-                        "author": "Cornelius a Lapide",
-                        "book_category": "Religion & Spirituality",
-                        "book_size": "A4",
-                        "language": "lat",
-                        "page_count": 603,
-                        "price": 15.21,
-                        "title": "12 - In Proverbia Salomonis"
-                    },
-                    {
-                        "author": "Cornelius a Lapide",
-                        "book_category": "Religion & Spirituality",
-                        "book_size": "A4",
-                        "language": "lat",
-                        "page_count": 724,
-                        "price": 17.75,
-                        "title": "14 - In Canticum Canticorum II & Sapientiam"
-                    },
-                    {
-                        "author": "Cornelius a Lapide",
-                        "book_category": "Religion & Spirituality",
-                        "book_size": "A4",
-                        "language": "lat",
-                        "page_count": 633,
-                        "price": 15.84,
-                        "title": "13 - In Ecclesiasten & Canticum Canticorum I"
-                    }, 
-                    {"title":"15/16 - In Ecclesiasticum",
-                    "author":"Cornelius a Lapide",
-                    "data": [
+            {
+                "author": "Cornelius a Lapide",
+                "book_category": "Religion & Spirituality",
+                "book_size": "A4",
+                "language": "lat",
+                "page_count": 603,
+                "price": 15.21,
+                "title": "12 - In Proverbia Salomonis"
+            },
+            {
+                "author": "Cornelius a Lapide",
+                "book_category": "Religion & Spirituality",
+                "book_size": "A4",
+                "language": "lat",
+                "page_count": 724,
+                "price": 17.75,
+                "title": "14 - In Canticum Canticorum II & Sapientiam"
+            },
+            {
+                "author": "Cornelius a Lapide",
+                "book_category": "Religion & Spirituality",
+                "book_size": "A4",
+                "language": "lat",
+                "page_count": 633,
+                "price": 15.84,
+                "title": "13 - In Ecclesiasten & Canticum Canticorum I"
+            },
+            {
+                "title": "15/16 - In Ecclesiasticum",
+                "author": "Cornelius a Lapide",
+                "data": [
                     {
                         "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
@@ -377,7 +377,7 @@
                         "page_count": 451,
                         "price": 12.02,
                         "title": "15 - In Ecclesiasticum I"
-                    }, 
+                    },
                     {
                         "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
@@ -386,14 +386,15 @@
                         "page_count": 499,
                         "price": 13.03,
                         "title": "16 - In Ecclesiasticum II"
-                    } 
-                    ]
-                    },
-                    {"title":"17/18 - In Evangelia",
-                    "author": "Cornelius a Lapide",
-                    "data": [
-                        {
-                        "author":"Cornelius a Lapide",
+                    }
+                ]
+            },
+            {
+                "title": "17/18 - In Evangelia",
+                "author": "Cornelius a Lapide",
+                "data": [
+                    {
+                        "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
                         "book_size": "A4",
                         "language": "lat",
@@ -401,8 +402,8 @@
                         "price": 12.63,
                         "title": "In SS Matthæum et Marcum"
                     },
-                        {
-                        "author":"Cornelius a Lapide",
+                    {
+                        "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
                         "book_size": "A4",
                         "language": "lat",
@@ -410,14 +411,14 @@
                         "price": 13.64,
                         "title": "In SS Lucam et Johannem"
                     }
-                        
-                    ]
-                    },
-                    {"title":"19/20 - In Epistolas Sancti Pauli",
-                    "author": "Cornelius a Lapide",
-                    "data": [
-                        {
-                        "author":"Cornelius a Lapide",
+                ]
+            },
+            {
+                "title": "19/20 - In Epistolas Sancti Pauli",
+                "author": "Cornelius a Lapide",
+                "data": [
+                    {
+                        "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
                         "book_size": "A4",
                         "language": "lat",
@@ -425,8 +426,8 @@
                         "price": 12.17,
                         "title": "In Epistolas Sancti Pauli I"
                     },
-                        {
-                        "author":"Cornelius a Lapide",
+                    {
+                        "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
                         "book_size": "A4",
                         "language": "lat",
@@ -434,13 +435,14 @@
                         "price": 11.92,
                         "title": "In Epistolas Sancti Pauli II"
                     }
-                    ]
-                    },
-                    {"title":"21/22 - In Epistolas SS Petri, Judæ, Jacobi et Johannis et in Apocalypsin",
-                    "author": "Cornelius a Lapide",
-                    "data": [
-                        {
-                        "author":"Cornelius a Lapide",
+                ]
+            },
+            {
+                "title": "21/22 - In Epistolas SS Petri, Judæ, Jacobi et Johannis et in Apocalypsin",
+                "author": "Cornelius a Lapide",
+                "data": [
+                    {
+                        "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
                         "book_size": "A4",
                         "language": "lat",
@@ -448,25 +450,22 @@
                         "price": 15.89,
                         "title": "In Epistolas SS Petri et Jacobi"
                     },
-                        {
-                        "author":"Cornelius a Lapide",
+                    {
+                        "author": "Cornelius a Lapide",
                         "book_category": "Religion & Spirituality",
                         "book_size": "A4",
                         "language": "lat",
                         "page_count": 512,
-                        "price": 13.30,
+                        "price": 13.3,
                         "title": "In Epistolas SS Judæ et Johannis et in Apocalypsin"
                     }
-                    ]
-                    }
-
-
-
+                ]
+            }
         ],
         "title": "Commentaria in Sacram Scripturam"
     },
     {
-        "author":"Saint Augustin",
+        "author": "Saint Augustin",
         "title": "Discours sur les Psaumes",
         "data": [
             {
@@ -484,7 +483,7 @@
                 "book_size": "Executive",
                 "language": "lat",
                 "page_count": 688,
-                "price": 17.00,
+                "price": 17.0,
                 "title": "Discours sur les Psaumes 31 à 58"
             },
             {
@@ -514,8 +513,8 @@
                 "price": 17.38,
                 "title": "Discours sur les Psaumes 120 à 150"
             }
-            ]
-            },
+        ]
+    },
     {
         "author": "Schuster",
         "data": [
@@ -791,40 +790,40 @@
     },
     {
         "author": "Abbé Vittrant",
-        "book_category":"Religion & Spirituality",
+        "book_category": "Religion & Spirituality",
         "book_size": "Digest",
-        "language":"fra",
-        "page_count":624,
-        "price":13.44,
-        "title":"Théologie Morale"
-        },
-        {
-        "author":"F.X. Godts",
-        "book_category":"Religion & Spirituality",
-        "book_size":"Executive",
-        "language":"lat",
-        "page_count":568,
-        "price":15.85,
-        "title":"De Paucitate Salvandorum quid docuerunt Sancti?"
-        },
+        "language": "fra",
+        "page_count": 624,
+        "price": 13.44,
+        "title": "Théologie Morale"
+    },
     {
-        "author":"Monléon",
-        "book_category":"Religion & Spirituality",
-        "book_size":"US Trade",
-        "language":"fra",
-        "page_count":472,
-        "price":10.78,
-        "title":"Les Instruments de la perfection"
-        },
+        "author": "F.X. Godts",
+        "book_category": "Religion & Spirituality",
+        "book_size": "Executive",
+        "language": "lat",
+        "page_count": 568,
+        "price": 15.85,
+        "title": "De Paucitate Salvandorum quid docuerunt Sancti?"
+    },
     {
-        "author":"Lottin",
-        "book_category":"Religion & Spirituality",
-        "book_size":"Digest",
-        "language":"fra",
-        "page_count":553,
-        "price":12.20,
-        "title":"Morale fondamentale"
-        },
+        "author": "Monléon",
+        "book_category": "Religion & Spirituality",
+        "book_size": "US Trade",
+        "language": "fra",
+        "page_count": 472,
+        "price": 10.78,
+        "title": "Les Instruments de la perfection"
+    },
+    {
+        "author": "Lottin",
+        "book_category": "Religion & Spirituality",
+        "book_size": "Digest",
+        "language": "fra",
+        "page_count": 553,
+        "price": 12.2,
+        "title": "Morale fondamentale"
+    },
     {
         "author": "Fillion",
         "data": [
@@ -1005,8 +1004,8 @@
     {
         "author": "Mgr de Ségur",
         "book_category": "Religion & Spirituality",
-        "book_size" : "Executive",
-        "language":"fra",
+        "book_size": "Executive",
+        "language": "fra",
         "page_count": 629,
         "price": 17.26,
         "title": "Œuvres complètes volume 4"
@@ -1014,113 +1013,133 @@
     {
         "author": "Mgr de Ségur",
         "book_category": "Religion & Spirituality",
-        "book_size" : "Pocket",
-        "language":"fra",
+        "book_size": "Pocket",
+        "language": "fra",
         "page_count": 71,
         "price": 3.73,
-        "title":"La Confession"
+        "title": "La Confession"
     },
     {
         "author": "Mgr de Ségur",
         "book_category": "Religion & Spirituality",
-        "book_size" : "Pocket",
-        "language":"fra",
+        "book_size": "Pocket",
+        "language": "fra",
         "page_count": 171,
         "price": 5.51,
         "title": "Les trois roses des élus"
     },
     {
-        "author":"Ludolphe le chartreux",
-        "title":"La Grande Vie de Jésus-Christ",
+        "author": "Ludolphe le chartreux",
+        "title": "La Grande Vie de Jésus-Christ",
         "data": [
             {
-            "author":"Ludolphe le chartreux",
-            "book_category":"Religion & Spirituality",
-            "book_size":"US Trade",
-            "language":"fra",
-            "page_count":556,
-            "price":12.25,
-            "title":"Tome 1"
+                "author": "Ludolphe le chartreux",
+                "book_category": "Religion & Spirituality",
+                "book_size": "US Trade",
+                "language": "fra",
+                "page_count": 556,
+                "price": 12.25,
+                "title": "Tome 1"
             },
             {
-            "author":"Ludolphe le chartreux",
-            "book_category":"Religion & Spirituality",
-            "book_size":"US Trade",
-            "language":"fra",
-            "page_count":540,
-            "price":11.97,
-            "title":"Tome 3"
+                "author": "Ludolphe le chartreux",
+                "book_category": "Religion & Spirituality",
+                "book_size": "US Trade",
+                "language": "fra",
+                "page_count": 540,
+                "price": 11.97,
+                "title": "Tome 3"
             },
             {
-            "author":"Ludolphe le chartreux",
-            "book_category":"Religion & Spirituality",
-            "book_size":"US Trade",
-            "language":"fra",
-            "page_count":572,
-            "price":12.53,
-            "title":"Tome 4"
+                "author": "Ludolphe le chartreux",
+                "book_category": "Religion & Spirituality",
+                "book_size": "US Trade",
+                "language": "fra",
+                "page_count": 572,
+                "price": 12.53,
+                "title": "Tome 4"
             },
             {
-            "author":"Ludolphe le chartreux",
-            "book_category":"Religion & Spirituality",
-            "book_size":"US Trade",
-            "language":"fra",
-            "page_count":539,
-            "price":11.95,
-            "title":"Tome 2"
+                "author": "Ludolphe le chartreux",
+                "book_category": "Religion & Spirituality",
+                "book_size": "US Trade",
+                "language": "fra",
+                "page_count": 539,
+                "price": 11.95,
+                "title": "Tome 2"
             }
-            ]
-        },
+        ]
+    },
     {
         "author": "Bernard Bartmann",
         "title": "Précis de théologie dogmatique",
-        "data" : [
-                    {
-                        "author":"Bernard Bartmann",
-                        "book_category":"Religion & Spirituality",
-                        "book_size":"A4",
-                        "language":"fra",
-                        "page_count":601,
-                        "price": 16.61,
-                        "title":"Volume 2"
-                        },
-                    {
-                        "author":"Bernard Bartmann",
-                        "book_category":"Religion & Spirituality",
-                        "book_size":"A4",
-                        "language":"fra",
-                        "page_count":550,
-                        "price": 15.44,
-                        "title":"Volume 1"
-                        }
-                        ]
-                        },
-
+        "data": [
+            {
+                "author": "Bernard Bartmann",
+                "book_category": "Religion & Spirituality",
+                "book_size": "A4",
+                "language": "fra",
+                "page_count": 601,
+                "price": 16.61,
+                "title": "Volume 2"
+            },
+            {
+                "author": "Bernard Bartmann",
+                "book_category": "Religion & Spirituality",
+                "book_size": "A4",
+                "language": "fra",
+                "page_count": 550,
+                "price": 15.44,
+                "title": "Volume 1"
+            }
+        ]
+    },
     {
-
-    "author":"Anonyme",
-    "title":"Missale Romanum 1920",
-    "data": [
-                            {
-                                "author": "Anonyme",
-                                "book_category": "Religion & Spirituality",
-                                "book_size": "A4",
-                                "language": "lat",
-                                "page_count": 581,
-                                "price": 26.95,
-                                "title": "Volume 1"
-                            },
-                            {
-                                "author": "Anonyme",
-                                "book_category": "Religion & Spirituality",
-                                "book_size": "A4",
-                                "language": "lat",
-                                "page_count": 639,
-                                "price": 34.84,
-                                "title": "Volume 2"
-                            }
-
-    ]
+        "author": "Anonyme",
+        "title": "Missale Romanum 1920",
+        "data": [
+            {
+                "author": "Anonyme",
+                "book_category": "Religion & Spirituality",
+                "book_size": "A4",
+                "language": "lat",
+                "page_count": 581,
+                "price": 26.95,
+                "title": "Volume 1"
+            },
+            {
+                "author": "Anonyme",
+                "book_category": "Religion & Spirituality",
+                "book_size": "A4",
+                "language": "lat",
+                "page_count": 639,
+                "price": 34.84,
+                "title": "Volume 2"
+            }
+        ]
+    },
+    {
+        "author": "Brown-Driver-Briggs",
+        "title": "Hebrew and English Lexicon for the old Testament",
+        "data": [
+            {
+                "author": "Brown-Driver-Briggs",
+                "book_category": "Education & languages",
+                "book_size": "Executive",
+                "language": "heb",
+                "page_count": 569,
+                "price": 16.59,
+                "title": "Aleph - Mem"
+            },
+            {
+                "author": "Brown-Driver-Briggs",
+                "book_category": "Education & languages",
+                "book_size": "Executive",
+                "language": "heb",
+                "page_count": 587,
+                "price": 17.02,
+                "title": "Mem - Taw & Biblical Aramaic"
+            }
+        ]
     }
-
 ]

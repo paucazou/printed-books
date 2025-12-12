@@ -25,6 +25,7 @@ BOOK_CATEGORIES = [
     "Religion & Spirituality",
     "Philosophy",
     "History",
+    "Education & languages",
 ]
 
 BOOK_SIZES = [
@@ -41,6 +42,7 @@ LANGUAGES = {
     "fra": "Français",
     "lat": "Latin",
     "eng": "Anglais",
+    "heb": "Hébreu",
 }
 
 

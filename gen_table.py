@@ -9,6 +9,7 @@ languages={
         'eng':"Anglais",
         'fra':"Français",
         "lat":"Latin",
+        "heb":"Hébreu",
         '':"PROBLEM\n\n\n"
         }
 
