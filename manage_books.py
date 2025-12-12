@@ -8,6 +8,8 @@ automatic git commit/push after successful table generation.
 """
 
 import json
+import os
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -17,6 +19,27 @@ from typing import Any, Dict, List, Optional, Union
 # Type aliases for better code clarity
 BookDict = Dict[str, Any]
 BooksData = List[BookDict]
+
+
+# ANSI color codes
+class Colors:
+    """ANSI color codes for terminal output."""
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+
+def get_separator(char: str = "=") -> str:
+    """Get a separator line that fits the terminal width."""
+    terminal_width = shutil.get_terminal_size((80, 20)).columns
+    # Use slightly less than full width for better aesthetics
+    return char * min(terminal_width - 2, 80)
 
 
 # Constants for book categories and sizes
@@ -49,8 +72,12 @@ LANGUAGES = {
 class BookManager:
     """Manages book data operations including loading, saving, and manipulation."""
 
-    def __init__(self, data_file: Path = Path("/save/scripts/report_lulu/data.txt")):
+    def __init__(self, data_file: Path = None):
         """Initialize the BookManager with a data file path."""
+        if data_file is None:
+            # Use relative path - assume script is in same directory as data.txt
+            script_dir = Path(__file__).parent
+            data_file = script_dir / "data.txt"
         self.data_file = data_file
         self.books: BooksData = []
         self.load_books()
@@ -60,12 +87,12 @@ class BookManager:
         try:
             with open(self.data_file, "r", encoding="utf-8") as f:
                 self.books = json.load(f)
-            print(f"Loaded {len(self.books)} book entries from {self.data_file}")
+            print(f"{Colors.OKGREEN}Loaded {len(self.books)} book entries from {self.data_file}{Colors.ENDC}")
         except FileNotFoundError:
-            print(f"Error: {self.data_file} not found!")
+            print(f"{Colors.FAIL}Error: {self.data_file} not found!{Colors.ENDC}")
             sys.exit(1)
         except json.JSONDecodeError as e:
-            print(f"Error: Invalid JSON in {self.data_file}: {e}")
+            print(f"{Colors.FAIL}Error: Invalid JSON in {self.data_file}: {e}{Colors.ENDC}")
             sys.exit(1)
 
     def save_books(self) -> None:
@@ -73,9 +100,9 @@ class BookManager:
         try:
             with open(self.data_file, "w", encoding="utf-8") as f:
                 json.dump(self.books, f, indent=4, ensure_ascii=False)
-            print(f"\nData saved successfully to {self.data_file}")
+            print(f"\n{Colors.OKGREEN}Data saved successfully to {self.data_file}{Colors.ENDC}")
         except Exception as e:
-            print(f"Error saving data: {e}")
+            print(f"{Colors.FAIL}Error saving data: {e}{Colors.ENDC}")
             sys.exit(1)
 
     def display_books(self, books: Optional[BooksData] = None, indent: int = 0) -> None:
@@ -85,7 +112,7 @@ class BookManager:
 
         for idx, book in enumerate(books, 1):
             prefix = "  " * indent
-            print(f"{prefix}{idx}. {book['title']} - {book['author']}")
+            print(f"{prefix}{Colors.OKCYAN}{idx}. {book['title']}{Colors.ENDC} - {Colors.OKBLUE}{book['author']}{Colors.ENDC}")
             if "data" in book:
                 self.display_books(book["data"], indent + 1)
 
@@ -120,11 +147,11 @@ class UserInterface:
                 value = int(input(prompt))
                 if value >= min_value:
                     return value
-                print(f"Please enter a value >= {min_value}")
+                print(f"{Colors.WARNING}Please enter a value >= {min_value}{Colors.ENDC}")
             except ValueError:
-                print("Invalid input. Please enter a valid number.")
+                print(f"{Colors.FAIL}Invalid input. Please enter a valid number.{Colors.ENDC}")
             except KeyboardInterrupt:
-                print("\nOperation cancelled.")
+                print(f"\n{Colors.WARNING}Operation cancelled.{Colors.ENDC}")
                 sys.exit(0)
 
     @staticmethod
@@ -135,11 +162,11 @@ class UserInterface:
                 value = float(input(prompt))
                 if value >= min_value:
                     return value
-                print(f"Please enter a value >= {min_value}")
+                print(f"{Colors.WARNING}Please enter a value >= {min_value}{Colors.ENDC}")
             except ValueError:
-                print("Invalid input. Please enter a valid decimal number.")
+                print(f"{Colors.FAIL}Invalid input. Please enter a valid decimal number.{Colors.ENDC}")
             except KeyboardInterrupt:
-                print("\nOperation cancelled.")
+                print(f"\n{Colors.WARNING}Operation cancelled.{Colors.ENDC}")
                 sys.exit(0)
 
     @staticmethod
@@ -159,15 +186,15 @@ class UserInterface:
                     choice_idx = int(choice_input)
                     if 1 <= choice_idx <= len(choices):
                         return choices[choice_idx - 1]
-                    print(f"Please enter a number between 1 and {len(choices)}")
+                    print(f"{Colors.WARNING}Please enter a number between 1 and {len(choices)}{Colors.ENDC}")
                 except ValueError:
                     if choice_input in choices:
                         return choice_input
                     print(
-                        "Invalid choice. Enter the number or exact text from the list."
+                        f"{Colors.FAIL}Invalid choice. Enter the number or exact text from the list.{Colors.ENDC}"
                     )
             except KeyboardInterrupt:
-                print("\nOperation cancelled.")
+                print(f"\n{Colors.WARNING}Operation cancelled.{Colors.ENDC}")
                 sys.exit(0)
 
     @staticmethod
@@ -178,9 +205,9 @@ class UserInterface:
                 value = input(prompt).strip()
                 if value or allow_empty:
                     return value
-                print("This field cannot be empty.")
+                print(f"{Colors.WARNING}This field cannot be empty.{Colors.ENDC}")
             except KeyboardInterrupt:
-                print("\nOperation cancelled.")
+                print(f"\n{Colors.WARNING}Operation cancelled.{Colors.ENDC}")
                 sys.exit(0)
 
     @staticmethod
@@ -193,9 +220,9 @@ class UserInterface:
                     return True
                 elif response in ["n", "no"]:
                     return False
-                print("Please enter 'y' or 'n'")
+                print(f"{Colors.WARNING}Please enter 'y' or 'n'{Colors.ENDC}")
             except KeyboardInterrupt:
-                print("\nOperation cancelled.")
+                print(f"\n{Colors.WARNING}Operation cancelled.{Colors.ENDC}")
                 sys.exit(0)
 
 
@@ -244,9 +271,9 @@ class BookCreator:
         """Create a multi-part book entry with nested data array."""
         parts: List[BookDict] = []
 
-        print(f"\nEntering information for {num_parts} parts:")
+        print(f"\n{Colors.OKCYAN}Entering information for {num_parts} parts:{Colors.ENDC}")
         for i in range(1, num_parts + 1):
-            print(f"\n--- Part {i}/{num_parts} ---")
+            print(f"\n{Colors.BOLD}--- Part {i}/{num_parts} ---{Colors.ENDC}")
             part_title = self.ui.get_text_input(f"  Title of part {i}: ")
             page_count = self.ui.get_int_input("  Page count: ")
             price = self.ui.get_float_input("  Price (€): ")
@@ -266,9 +293,10 @@ class BookCreator:
 
     def add_new_book(self) -> Optional[BookDict]:
         """Interactive flow to add a new book."""
-        print("\n" + "=" * 60)
-        print("ADD NEW BOOK")
-        print("=" * 60)
+        sep = get_separator()
+        print(f"\n{Colors.HEADER}{sep}")
+        print(f"{Colors.BOLD}ADD NEW BOOK{Colors.ENDC}")
+        print(f"{Colors.HEADER}{sep}{Colors.ENDC}")
 
         # Get number of parts
         num_parts = self.ui.get_int_input(
@@ -276,7 +304,7 @@ class BookCreator:
         )
 
         # Get common information
-        print("\n--- Common Information ---")
+        print(f"\n{Colors.BOLD}--- Common Information ---{Colors.ENDC}")
         author = self.ui.get_text_input("Author: ")
 
         book_category = self.ui.get_choice_input(
@@ -314,13 +342,13 @@ class BookCreator:
             )
 
         # Show preview
-        print("\n--- Preview ---")
+        print(f"\n{Colors.BOLD}--- Preview ---{Colors.ENDC}")
         print(json.dumps(book, indent=2, ensure_ascii=False))
 
         if self.ui.confirm("\nAdd this book?"):
             return book
         else:
-            print("Book not added.")
+            print(f"{Colors.WARNING}Book not added.{Colors.ENDC}")
             return None
 
 
@@ -334,9 +362,10 @@ class BookEditor:
 
     def edit_book(self) -> bool:
         """Interactive flow to edit an existing book."""
-        print("\n" + "=" * 60)
-        print("EDIT BOOK")
-        print("=" * 60)
+        sep = get_separator()
+        print(f"\n{Colors.HEADER}{sep}")
+        print(f"{Colors.BOLD}EDIT BOOK{Colors.ENDC}")
+        print(f"{Colors.HEADER}{sep}{Colors.ENDC}")
 
         print("\nCurrent books:")
         self.manager.display_books()
@@ -346,13 +375,13 @@ class BookEditor:
         )
 
         if choice == 0:
-            print("Edit cancelled.")
+            print(f"{Colors.WARNING}Edit cancelled.{Colors.ENDC}")
             return False
 
         book, _ = self.manager.find_book_by_index(self.manager.books, choice)
 
         if book is None:
-            print("Invalid selection.")
+            print(f"{Colors.FAIL}Invalid selection.{Colors.ENDC}")
             return False
 
         print(f"\nSelected: {book['title']} - {book['author']}")
@@ -397,10 +426,10 @@ class BookEditor:
         elif choice == 7:
             book["price"] = self.ui.get_float_input("New price (€): ")
         else:
-            print("Invalid choice.")
+            print(f"{Colors.FAIL}Invalid choice.{Colors.ENDC}")
             return False
 
-        print("Book updated successfully.")
+        print(f"{Colors.OKGREEN}Book updated successfully.{Colors.ENDC}")
         return True
 
     def _edit_multi_part_book(self, book: BookDict) -> bool:
@@ -427,7 +456,7 @@ class BookEditor:
             self._update_author_recursively(book["data"], new_author)
             return True
         else:
-            print("Invalid choice.")
+            print(f"{Colors.FAIL}Invalid choice.{Colors.ENDC}")
             return False
 
     def _update_author_recursively(self, data: BooksData, new_author: str) -> None:
@@ -439,15 +468,15 @@ class BookEditor:
 
     def _add_part_to_book(self, book: BookDict) -> bool:
         """Add a new part to an existing multi-part book."""
-        print(f"\nAdding new part to: {book['title']}")
+        print(f"\n{Colors.OKCYAN}Adding new part to: {Colors.BOLD}{book['title']}{Colors.ENDC}")
 
         # Try to infer common fields from existing parts
         first_part = self._get_first_leaf_book(book["data"])
         if first_part:
-            print("\nUsing common information from existing parts:")
+            print(f"\n{Colors.OKBLUE}Using common information from existing parts:")
             print(f"  Category: {first_part.get('book_category', 'N/A')}")
             print(f"  Size: {first_part.get('book_size', 'N/A')}")
-            print(f"  Language: {first_part.get('language', 'N/A')}")
+            print(f"  Language: {first_part.get('language', 'N/A')}{Colors.ENDC}")
 
             use_existing = self.ui.confirm("Use these values for the new part?")
             if use_existing:
@@ -482,7 +511,7 @@ class BookEditor:
         }
 
         book["data"].append(new_part)
-        print("New part added successfully.")
+        print(f"{Colors.OKGREEN}New part added successfully.{Colors.ENDC}")
         return True
 
     def _get_first_leaf_book(self, data: BooksData) -> Optional[BookDict]:
@@ -500,8 +529,11 @@ class BookEditor:
 class GitManager:
     """Handles git operations."""
 
-    def __init__(self, repo_path: Path):
+    def __init__(self, repo_path: Path = None):
         """Initialize GitManager with repository path."""
+        if repo_path is None:
+            # Use relative path - assume script is in the git repository
+            repo_path = Path(__file__).parent
         self.repo_path = repo_path
 
     def run_command(self, command: List[str]) -> tuple[int, str, str]:
@@ -522,44 +554,46 @@ class GitManager:
 
     def commit_and_push(self, commit_message: str) -> bool:
         """Stage data.txt, commit with message, and push to remote."""
-        print("\n" + "=" * 60)
-        print("GIT OPERATIONS")
-        print("=" * 60)
+        sep = get_separator()
+        print(f"\n{Colors.HEADER}{sep}")
+        print(f"{Colors.BOLD}GIT OPERATIONS{Colors.ENDC}")
+        print(f"{Colors.HEADER}{sep}{Colors.ENDC}")
 
         # Stage data.txt
-        print("\nStaging data.txt...")
+        print(f"\n{Colors.OKCYAN}Staging data.txt...{Colors.ENDC}")
         exit_code, stdout, stderr = self.run_command(["git", "add", "data.txt"])
         if exit_code != 0:
-            print(f"Error staging file: {stderr}")
+            print(f"{Colors.FAIL}Error staging file: {stderr}{Colors.ENDC}")
             return False
-        print("File staged successfully.")
+        print(f"{Colors.OKGREEN}File staged successfully.{Colors.ENDC}")
 
         # Commit
-        print(f"\nCommitting with message: {commit_message}")
+        print(f"\n{Colors.OKCYAN}Committing with message: {commit_message}{Colors.ENDC}")
         exit_code, stdout, stderr = self.run_command(
             ["git", "commit", "-m", commit_message]
         )
         if exit_code != 0:
-            print(f"Error committing: {stderr}")
+            print(f"{Colors.FAIL}Error committing: {stderr}{Colors.ENDC}")
             return False
-        print("Commit successful.")
+        print(f"{Colors.OKGREEN}Commit successful.{Colors.ENDC}")
 
         # Push
-        print("\nPushing to remote...")
+        print(f"\n{Colors.OKCYAN}Pushing to remote...{Colors.ENDC}")
         exit_code, stdout, stderr = self.run_command(["git", "push"])
         if exit_code != 0:
-            print(f"Error pushing: {stderr}")
+            print(f"{Colors.FAIL}Error pushing: {stderr}{Colors.ENDC}")
             return False
-        print("Push successful.")
+        print(f"{Colors.OKGREEN}Push successful.{Colors.ENDC}")
 
         return True
 
 
 def run_gen_table(script_path: Path) -> bool:
     """Run the gen_table.py script and return True if successful."""
-    print("\n" + "=" * 60)
-    print("GENERATING TABLE")
-    print("=" * 60)
+    sep = get_separator()
+    print(f"\n{Colors.HEADER}{sep}")
+    print(f"{Colors.BOLD}GENERATING TABLE{Colors.ENDC}")
+    print(f"{Colors.HEADER}{sep}{Colors.ENDC}")
 
     try:
         result = subprocess.run(
@@ -571,12 +605,12 @@ def run_gen_table(script_path: Path) -> bool:
         )
 
         if result.returncode == 0:
-            print("Table generated successfully!")
+            print(f"{Colors.OKGREEN}Table generated successfully!{Colors.ENDC}")
             if result.stdout:
                 print(result.stdout)
             return True
         else:
-            print(f"Error generating table (exit code {result.returncode}):")
+            print(f"{Colors.FAIL}Error generating table (exit code {result.returncode}):{Colors.ENDC}")
             if result.stderr:
                 print(result.stderr)
             if result.stdout:
@@ -584,31 +618,33 @@ def run_gen_table(script_path: Path) -> bool:
             return False
 
     except subprocess.TimeoutExpired:
-        print("Error: gen_table.py timed out")
+        print(f"{Colors.FAIL}Error: gen_table.py timed out{Colors.ENDC}")
         return False
     except Exception as e:
-        print(f"Error running gen_table.py: {e}")
+        print(f"{Colors.FAIL}Error running gen_table.py: {e}{Colors.ENDC}")
         return False
 
 
 def main() -> None:
     """Main entry point for the book management system."""
-    print("=" * 60)
-    print("BOOK MANAGEMENT SYSTEM")
-    print("=" * 60)
+    sep = get_separator()
+    print(f"{Colors.HEADER}{sep}")
+    print(f"{Colors.BOLD}BOOK MANAGEMENT SYSTEM{Colors.ENDC}")
+    print(f"{Colors.HEADER}{sep}{Colors.ENDC}")
 
     # Initialize components
     manager = BookManager()
     ui = UserInterface()
     creator = BookCreator(ui)
     editor = BookEditor(manager, ui)
-    git_mgr = GitManager(Path("/save/scripts/report_lulu"))
+    git_mgr = GitManager()
 
     # Main menu loop
     while True:
-        print("\n" + "=" * 60)
-        print("MAIN MENU")
-        print("=" * 60)
+        sep = get_separator()
+        print(f"\n{Colors.HEADER}{sep}")
+        print(f"{Colors.BOLD}MAIN MENU{Colors.ENDC}")
+        print(f"{Colors.HEADER}{sep}{Colors.ENDC}")
         print("1. Add new book")
         print("2. Edit existing book")
         print("3. View all books")
@@ -618,33 +654,35 @@ def main() -> None:
         choice = ui.get_int_input("\nYour choice: ", min_value=0)
 
         if choice == 0:
-            print("\nExiting without saving.")
+            print(f"\n{Colors.WARNING}Exiting without saving.{Colors.ENDC}")
             sys.exit(0)
 
         elif choice == 1:
             new_book = creator.add_new_book()
             if new_book:
                 manager.books.append(new_book)
-                print("\nBook added to collection!")
+                print(f"\n{Colors.OKGREEN}Book added to collection!{Colors.ENDC}")
 
         elif choice == 2:
             editor.edit_book()
 
         elif choice == 3:
-            print("\n--- All Books ---")
+            print(f"\n{Colors.BOLD}--- All Books ---{Colors.ENDC}")
             manager.display_books()
 
         elif choice == 4:
             # Save and exit flow
-            print("\n" + "=" * 60)
-            print("SAVE AND EXIT")
-            print("=" * 60)
+            sep = get_separator()
+            print(f"\n{Colors.HEADER}{sep}")
+            print(f"{Colors.BOLD}SAVE AND EXIT{Colors.ENDC}")
+            print(f"{Colors.HEADER}{sep}{Colors.ENDC}")
 
             # Save the data
             manager.save_books()
 
-            # Run gen_table.py
-            gen_table_path = Path("/save/scripts/report_lulu/gen_table.py")
+            # Run gen_table.py - use relative path
+            script_dir = Path(__file__).parent
+            gen_table_path = script_dir / "gen_table.py"
             if run_gen_table(gen_table_path):
                 # Ask for commit message
                 if ui.confirm("\nCommit and push changes?"):
@@ -658,25 +696,25 @@ def main() -> None:
                         commit_msg = "Update book database"
 
                     git_mgr.commit_and_push(commit_msg)
-                    print("\nAll operations completed successfully!")
+                    print(f"\n{Colors.OKGREEN}All operations completed successfully!{Colors.ENDC}")
                 else:
-                    print("\nChanges saved but not committed.")
+                    print(f"\n{Colors.WARNING}Changes saved but not committed.{Colors.ENDC}")
             else:
-                print("\ngen_table.py failed. Changes NOT committed or pushed.")
-                print("Data was saved to data.txt but git operations were skipped.")
+                print(f"\n{Colors.FAIL}gen_table.py failed. Changes NOT committed or pushed.{Colors.ENDC}")
+                print(f"{Colors.WARNING}Data was saved to data.txt but git operations were skipped.{Colors.ENDC}")
 
             sys.exit(0)
 
         else:
-            print("Invalid choice. Please try again.")
+            print(f"{Colors.FAIL}Invalid choice. Please try again.{Colors.ENDC}")
 
 
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\n\nProgram interrupted by user. Exiting...")
+        print(f"\n\n{Colors.WARNING}Program interrupted by user. Exiting...{Colors.ENDC}")
         sys.exit(0)
     except Exception as e:
-        print(f"\nUnexpected error: {e}")
+        print(f"\n{Colors.FAIL}Unexpected error: {e}{Colors.ENDC}")
         sys.exit(1)
