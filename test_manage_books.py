@@ -19,6 +19,7 @@ from typing import List
 from unittest.mock import MagicMock, Mock, call, mock_open, patch
 
 import pytest
+import re
 
 # Import the module to test
 import manage_books
@@ -33,6 +34,17 @@ from manage_books import (
     UserInterface,
     run_gen_table,
 )
+
+
+# ============================================================================
+# HELPER FUNCTIONS
+# ============================================================================
+
+
+def strip_ansi_codes(text: str) -> str:
+    """Remove ANSI color codes from text."""
+    ansi_escape = re.compile(r'\x1b\[[0-9;]*m')
+    return ansi_escape.sub('', text)
 
 
 # ============================================================================
@@ -199,17 +211,19 @@ class TestBookManager:
         book_manager.display_books()
 
         captured = capsys.readouterr()
-        assert "1. Simple Book - Test Author" in captured.out
-        assert "2. Multi-Part Book - Multi Author" in captured.out
+        output = strip_ansi_codes(captured.out)
+        assert "1. Simple Book - Test Author" in output
+        assert "2. Multi-Part Book - Multi Author" in output
 
     def test_display_books_with_nested_data(self, book_manager, capsys):
         """Test displaying books with nested data."""
         book_manager.display_books()
 
         captured = capsys.readouterr()
+        output = strip_ansi_codes(captured.out)
         # Check that nested books are indented
-        assert "  1. Part 1 - Multi Author" in captured.out
-        assert "  2. Part 2 - Multi Author" in captured.out
+        assert "  1. Part 1 - Multi Author" in output
+        assert "  2. Part 2 - Multi Author" in output
 
     def test_find_book_by_index_simple_book(self, book_manager):
         """Test finding a simple book by index."""
@@ -1421,11 +1435,12 @@ class TestConstants:
 
     def test_book_categories_defined(self):
         """Test BOOK_CATEGORIES constant is defined correctly."""
-        assert len(BOOK_CATEGORIES) == 4
+        assert len(BOOK_CATEGORIES) == 5
         assert "Music" in BOOK_CATEGORIES
         assert "Religion & Spirituality" in BOOK_CATEGORIES
         assert "Philosophy" in BOOK_CATEGORIES
         assert "History" in BOOK_CATEGORIES
+        assert "Education & languages" in BOOK_CATEGORIES
 
     def test_book_sizes_defined(self):
         """Test BOOK_SIZES constant is defined correctly."""
@@ -1436,10 +1451,12 @@ class TestConstants:
 
     def test_languages_defined(self):
         """Test LANGUAGES constant is defined correctly."""
-        assert len(LANGUAGES) == 3
+        assert len(LANGUAGES) == 4
         assert "fra" in LANGUAGES
         assert "lat" in LANGUAGES
         assert "eng" in LANGUAGES
+        assert "heb" in LANGUAGES
         assert LANGUAGES["fra"] == "Français"
         assert LANGUAGES["lat"] == "Latin"
         assert LANGUAGES["eng"] == "Anglais"
+        assert LANGUAGES["heb"] == "Hébreu"
